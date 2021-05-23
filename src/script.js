@@ -14,7 +14,7 @@ const scene = new THREE.Scene();
 let model;
 const gltfLoader = new GLTFLoader();
 
-gltfLoader.load('/models/tiberius/scene.gltf', (gltf) => {
+gltfLoader.load('models/tiberius/scene.gltf', (gltf) => {
 	model = gltf.scene.children[0];
 	const box = new THREE.Box3().setFromObject(model);
 	const center = box.getCenter(new THREE.Vector3());
